@@ -1,0 +1,129 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:wght@500&family=Inter:wght@100;200;300;400;500;600;700;900&family=Poppins&family=Rubik+Lines&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond:wght@500&family=Inter:wght@100;200;300;400;500;600;700;900&family=Pacifico&family=Poppins&family=Rubik+Lines&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=EB+Garamond:wght@500&family=Inter:wght@100;200;300;400;500;600;700;900&family=Pacifico&family=Poppins&family=Rubik+Lines&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  padding:2rem;
+  background: #000;
+  height:100vh;
+  width:100vw;
+  color:white;
+  text-align: center;
+}
+h1{
+  
+  font-size:3rem;
+  color:white;
+  text-transform: uppercase;
+  position:relative;
+/* text-shadow: 0 2px 1px #79a06d, 
+      -1px 3px 1px #82ad75, 
+      -2px 5px 1px #8ebf80;*/text-shadow: 0 2px 1px #79a06d, 
+      -1px 3px 1px #82ad75, 
+      -2px 5px 1px #8ebf80;
+       animation: slideleft 3s ease forwards;
+}
+@keyframes slideleft{
+  0%{
+    transform:translateX(-100%);
+  }
+  100%{
+    transform:translateX(0%);
+  }
+}
+ h1::after{
+  text-shadow:none;
+  content:"number guessing game";
+  position:absolute;
+  color:white;
+  top:45px;
+  left:162px;
+  transform: rotateX(180deg);
+ color:transparent;
+ background-image: linear-gradient(0, #777 0, transparent 100%);
+ 
+  background-clip: text;
+ 
+ animation: move 2s ease-in  infinite alternate-reverse both running ;
+ 
+}
+
+@keyframes move{
+  0%{
+  top:30px;
+  }
+  100%{
+    top:45px;
+  }
+}
+.main{
+  height:800px;
+  width:800px;
+  margin:0 auto;
+  padding:4rem;
+  margin-top:4rem;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+ /* font-family: Pacifico;*/
+ font-family:Abril Fatface;
+  color:white;
+border:1px solid white;
+border-radius: 3rem;
+box-shadow: 5px 6px 16px 2px #79a06d, 
+      -3px 3px 20px 1px #82ad75, 
+      -6px 5px 15px 2px #8ebf80;
+animation: slideleft 3s ease forwards;
+              
+}
+.form{
+  display: flex;
+  gap:1.5rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+#guessfield{
+ width:100px;
+ height: 40px;
+ border:none;
+ outline: none;
+ padding: 0.4rem;
+ color:black;
+ font-weight: bold;
+ box-shadow:1px 1px 8px 2px white;
+ 
+}
+#guessSubmit{
+  height:40px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow:1px 1px 10px 2px white;
+ 
+}
+#guessSubmit:hover{
+  background-color: #62AEDA;
+}
+button{
+  height:40px;
+  width: 190px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow:1px 1px 10px 2px white;
+  background: #0D8DFF;
+ 
+}
+
+button:hover{
+  background-color: green;}
